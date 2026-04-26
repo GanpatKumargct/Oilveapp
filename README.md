@@ -1,16 +1,100 @@
-# React + Vite
+# Oilveapp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and dynamic landing page built with React, Vite, and Tailwind CSS. The application features smooth animations and a clean user interface, designed to provide an excellent user experience.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend Framework:** React 19
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Carousels:** React Slick & Slick Carousel
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Design:** Fully responsive layout that looks great on desktop, tablet, and mobile devices.
+- **Hero Section:** Engaging introductory section with a clear call-to-action.
+- **Features Highlight:** Detailed section explaining the core features and benefits.
+- **Testimonials Carousel:** Interactive carousel displaying user feedback and reviews, powered by React Slick.
+- **Pricing Plans:** Clear and concise pricing tables for different subscription tiers.
+- **Smooth Animations:** High-quality micro-interactions and scroll animations using Framer Motion.
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+oilveapp/
+├── public/             # Static assets
+├── src/
+│   ├── components/     # Reusable React components
+│   │   ├── Features.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Pricing.jsx
+│   │   └── Testimonials.jsx
+│   ├── App.jsx         # Main application component
+│   ├── index.css       # Global styles and Tailwind directives
+│   └── main.jsx        # Application entry point
+├── eslint.config.js    # ESLint configuration
+├── postcss.config.js   # PostCSS configuration
+├── tailwind.config.js  # Tailwind CSS configuration
+├── vite.config.js      # Vite configuration
+└── package.json        # Project dependencies and scripts
+```
+
+## 🛠️ Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- Node.js (version 18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository or extract the project files.
+2. Navigate to the project directory:
+   ```bash
+   cd oilveapp
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+
+To start the development server with Hot Module Replacement (HMR):
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:5173` (or the port specified in your terminal) to see the application running.
+
+### Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+The compiled assets will be available in the `dist` folder. You can preview the production build locally using:
+
+```bash
+npm run preview
+```
+
+## 📝 Scripts
+
+- `npm run dev`: Starts the Vite development server.
+- `npm run build`: Bundles the application for production.
+- `npm run preview`: Previews the production build locally.
+- `npm run lint`: Runs ESLint to check for code quality and formatting issues.
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
